@@ -1,28 +1,26 @@
 <template>
-  <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <div id="app" class="body-container">
+    <BlogComponent/>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue';
+import BlogComponent from './components/Blog.vue';
 
 export default {
   name: 'app',
   components: {
-    HelloWorld,
-  },
-};
+    BlogComponent,
+  }
+}
+
 </script>
 
 <style lang="scss">
-#app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
+ @media( min-width: 1024px) {
+  .body-container {
+    max-width: 1040px;
+    margin: 25px auto;
+  }
+ }
 </style>

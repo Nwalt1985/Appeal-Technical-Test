@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
+
+/* COLOURS */
+$primary-color: #000;
+$secondary-color: #505050;
+$secondary-color-fade: #CDCDCD;
+
+$background-color: #FBFBFB;
+
+$color-green: #337070;
+$color-green-fade: #5F9595;
+
+/* TYPOGRAPHY */
+
+// Font Sizes
+$header-h1: 32px;
+$header-h2: 24px;
+$header-h3: 18px;
+$header-h4: 16px;
+$header-h5: 14px;
+$header-h6: 12px;
+
+$body-text-size: 14px;
+
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+h1, h2, h3, h5 {
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+h1 {
+    font-size: $header-h1;
+}
+
+h2 {
+    font-size: $header-h2;
+}
+
+h3 {
+    font-size: $header-h3;
+}
+
+h4 {
+    font-size: $header-h4;
+    font-weight: 400;
+    color: $secondary-color;
+}
+
+h5 {
+    font-size: $header-h5;
+}
+
+h6 {
+    font-size: $header-h6;
+    color: $secondary-color-fade;
+}
+
+p {
+    font-size: $body-text-size;
+    color: $secondary-color-fade;
+}
